@@ -13,8 +13,6 @@ $(document).ready(function(){
   
     // GET para importar datos del JSON
     $.get("../data/producto.json", function(datos, estado){
-      console.log(datos);
-      console.log(estado);
       if(estado == "success") {
         for(const literal of datos){
           productos.push(new Producto(literal.id, literal.nombre, literal.precio, literal.categoria, literal.cantidad, literal.imagen,));
