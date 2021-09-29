@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAC;EACD,gBAAgB,EENV,SAAqB;CFQ9B;;AAGD,AAAA,MAAM,CAAA;EACF,gBAAgB,EETb,OAAc;CFwBpB;;AAhBD,AAEI,MAFE,CAEF,GAAG,CAAC;EACA,KAAK,EEZJ,KAAK;CFaT;;AAJL,AAKI,MALE,CAKF,EAAE,CAAC;EACC,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,GAAG;CACnB;;AARL,AASI,MATE,CASF,CAAC,CAAA;EACG,eAAe,EAAE,IAAI;EACrB,KAAK,EEpBJ,KAAK;CFsBT",
+    "sources": [
+        "sass/estilo.scss",
+        "sass/base/_fuentes.scss",
+        "sass/base/_colores.scss",
+        "sass/base/_mixins.scss"
+    ],
+    "names": [],
+    "file": "estilo.css"
+}

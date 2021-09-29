@@ -1,0 +1,455 @@
+
+
+
+/** Header **/
+
+#FondoHeader {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,116,1) 32%, rgba(64,224,208,1) 100%);
+    
+}
+#letras{
+    color: white;
+    align-self: flex-end;
+    
+}
+h1{
+    text-align: center;
+}
+
+#img {
+    display:block;
+    margin:auto;
+}
+
+.bordes {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 4px 0px rgba(0,0,0,0.06); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 4px 0px rgba(0,0,0,0.06);
+}
+
+
+.colorle {
+  font-size: 1,5rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+  color: #FFFFFF;
+  text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(0,173,206,0);
+}
+
+.pad{
+    padding: 20px;
+}
+
+/** seccion novedades**/
+
+.novedades{
+    margin-top: 30px;
+    height: 80px;
+    background-color: rgba(2,0,36,1);
+    text-align: center;
+}
+
+.novedades2{
+  padding-top: 10px;
+  color: white;
+  font-size: 3rem;
+}
+
+
+/** seccion barberia**/
+
+.cursos{
+  margin-top: 30px;
+  height: 80px;
+  background-color: rgba(2,0,36,1);
+  text-align: center;
+}
+
+.cursos2{
+  padding-top: 20px;
+  color: white;
+}
+
+
+/** Footer BEM 1 BArberia **/
+
+.pie{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60px; 
+  background-color: black;
+  font-style: italic;
+}
+.pie__di{}
+
+
+
+.pie__di--letras {
+  margin-top:20px;
+  color: white; 
+  text-decoration: none;
+}
+
+/** Footer BEM manicura peluqueria 2 **/
+
+
+.pie2{    
+  width: 100%;
+  height: 60px; 
+  line-height: 50px; 
+  background-color: black;
+  font-style: italic;
+}
+
+.pie2__container{
+  margin-top: 3px;
+  padding-left: 7px;
+}
+.pie2__container--letras{
+  color: white; 
+  text-decoration: none;
+}
+
+/** CSS peluqueria manicura **/
+.ImgPM {
+    display:block;
+    margin:auto;
+    width: 100px;
+}
+
+.letras{
+  color: white;
+}
+
+div h2{
+    margin-top: 20px;
+    padding: 20px;
+    font-family: sans-serif;
+    background: rgba(2,0,36,1);
+    text-align: center;
+  }
+div h3{
+    margin-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+.fotos {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  h2 {
+    margin-bottom: .5em;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+
+  .locationn{
+    position: relative;
+    background: rgb(2, 0, 36);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  /** interior tarjetas **/
+.ff{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .cardd{
+  text-align: center;
+  color: white;
+  }
+  .btnflex{
+  margin: auto;
+  display: flex;
+  border-radius: 5px;
+  background-color: revert;
+  
+  }
+  .texxx{
+  color: white;
+  font-size: 2rem;
+  }
+  /** Animacion tarjetas **/
+  
+  #fondoxxx{
+  background: rgb(2, 0, 36);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  
+  /* Estilo hover manicura y peluqueria */
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(0px);
+    }
+  }
+
+
+/** Animacion tarjetas **/
+
+.entrada{
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+
+/** Animación onix **/
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 900ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 900ms cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/** Mediaqueris Index **/
+
+@media only screen and (min-width: 768px) and (max-width:992px){
+
+  #ColorBoton{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    width: 300px;
+  }
+  
+  #lts{
+    font-size: 30px;
+    line-height: 60px;
+
+  }
+  
+  #carousel {
+    width: 700px;
+   }
+   #lts{
+    font-size: 30px;
+    line-height: 60px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:767px){
+
+  #ColorBoton{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    width: 300px;
+  }
+  
+  #lts{
+    font-size: 30px;
+    line-height: 60px;
+
+  }
+  
+  #carousel {
+    width: 500pxpx;
+   }
+   .lts{
+    font-size: 20px;
+    line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:375px){
+
+  #ColorBoton{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    width: 300px;
+  }
+  
+  #logo{
+    width: 30;
+  }
+  #lts{
+    font-size: 30px;
+    line-height: 60px;
+
+  }
+  .imagenes{
+    width: 300px ;
+    height: 400px;
+  }
+  #caru{
+    width: 100px;
+    height: 400px;
+  }
+  .padd{
+    padding: 60px 110px 30px 20px;
+}
+.lts{
+  font-size: 15px;
+  line-height: 60px;
+  
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width:576px){
+
+  #ColorBoton{
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    width: 300px;
+  }
+  
+  #logo{
+    width: 30;
+  }
+  #lts{
+    font-size: 30px;
+    line-height: 60px;
+
+  }
+  .imagenes-min{
+    width: 300px ;
+    height: 400px;
+  }
+  .padd{
+    padding: 60px 110px 30px 60px;
+}
+.lts{
+  font-size: 15px;
+  line-height: 50px;
+}
+}
+
+
+/** footer index **/
+.foot{
+  text-align: center;
+}
+
+.padding1{
+  padding: 0px 0px 0px 2px;
+}
+.padding2{
+  padding: 0px 0px 0px 6px;
+}
+
+.padding3{
+  padding: 0px 0px 0px 14px;
+}
+
+.padding4{
+  padding: 0px 0px 0px 0px;
+}
+
+.padding5{
+  padding: 0px 0px 0px 1px;
+}

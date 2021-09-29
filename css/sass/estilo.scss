@@ -1,0 +1,29 @@
+@import "base/fuentes";
+@import "base/colores";
+@import "base/mixins";
+
+
+body {
+    background-color: $celeste;
+
+}
+
+
+footer{
+    background-color: $Gtopo;
+    div {
+        color: $blanco;
+    }
+    h3 {
+        margin-bottom: 30px;
+        font-weight: 800;
+    }
+    a{
+        text-decoration: none;
+        color: $blanco;
+        
+    }
+
+
+}
+
